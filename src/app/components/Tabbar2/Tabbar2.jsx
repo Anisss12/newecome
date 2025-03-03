@@ -7,7 +7,7 @@ const TabBar2 = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const blocks = [
-    { href: "/cart", icon: "fa-solid fa-sort", label: "Sort" },
+    { href: "", icon: "fa-solid fa-sort", label: "Sort" },
     { href: "/filter", icon: "fa-solid fa-filter", label: "Filter" },
   ];
 
@@ -27,8 +27,9 @@ const TabBar2 = () => {
             <Link className={styles.links} href={item.href}>
               {" "}
               <i className={item.icon}></i>
-            </Link>
+            
             <p className={styles.label}>{item.label}</p>
+              </Link>
           </div>
         ))}
       </div>
